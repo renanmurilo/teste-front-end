@@ -1,26 +1,28 @@
-# teste-dev
+# Teste Front-end
 
-## Project setup
+## Faça o clone do repositório
+
+## Para intalar o projeto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Para rodar o projeto
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Para compilar para produção
 ```
 npm run build
 ```
 
-### Run your tests
+### Para fazer teste
 ```
 npm run test
 ```
 
-### Lints and fixes files
+### Para fazer correções
 ```
 npm run lint
 ```
