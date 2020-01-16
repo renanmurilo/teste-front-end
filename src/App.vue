@@ -1,32 +1,68 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <TheHeader />
+      <transition mode="out-in">
+        <router-view />
+      </transition>
+    <TheFooter />
   </div>
 </template>
 
+<script>
+import TheHeader from "@/components/TheHeader.vue";
+import TheFooter from "@/components/TheFooter.vue";
+
+export default {
+  components: {
+    TheHeader,
+    TheFooter
+  }
+};
+</script>
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
 }
 
-#nav {
-  padding: 30px;
+body,
+ul,
+li,
+h1,
+h2,
+p {
+  padding: 0px;
+  margin: 0px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+a{
+  text-decoration: none;
+  color: #000000;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+ul {
+  list-style: none;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.VueCarousel-pagination{
+  position: absolute;
+  bottom: 34px;
+}
+
+.VueCarousel-dot{
+  opacity: .5;
+}
+.VueCarousel-dot--active{
+  opacity: 1;
+  background-color: #fff;
+}
+
 </style>
