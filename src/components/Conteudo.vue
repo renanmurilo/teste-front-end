@@ -13,13 +13,13 @@
                         <p>{{ conteudo.texto }}</p>
                     </div>
                 </div>
-                <div class="conteudo-2" v-for="(conteudo, index) in conteudo2" :key="index">
+                <div class="conteudo-2" v-for="(conte, index) in contes" :key="index">
                     <div class="image-icon">
-                        <img :src="conteudo.image" alt="">
+                        <img :src="conte.image" alt="">
                     </div>
                     <div class="texto-conteudo">
-                        <h3>{{ conteudo.title }}</h3>
-                        <p>{{ conteudo.texto }}</p>
+                        <h3>{{ conte.title }}</h3>
+                        <p>{{ conte.texto }}</p>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ export default {
           image: "./images/pasta.png"
         }
       ],
-      conteudo2:[
+      contes:[
         {
           id: 0,
           title: "HTML3 & CSS3 ",
