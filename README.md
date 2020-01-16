@@ -2,7 +2,7 @@
 
 ## Faça o clone do repositório
 
-## Para intalar o projeto
+## Para instalar o projeto
 ```
 npm install
 ```
